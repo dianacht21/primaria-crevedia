@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Primăria Comunei Crevedia — Formular cetățeni</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="images/stema.png" alt="Sigla Primăria Comunei Crevedia" />
+        <div>
+          <h1>Primăria Comunei Crevedia</h1>
+          <div class="badge">Județul Dâmbovița</div>
+        </div>
+      </div>
+      <nav aria-label="Meniu principal">
+  <a href="index.html">Info primărie</a>
+  <a href="istoric.html">Istoric</a>
+  <a href="galerie.html">Media Gallery</a>
+  <a href="conducerea.html">Conducerea</a>
+  <a href="informatii-publice.html">Informații publice</a>
+  <a href="formular.html">Formular cetățeni</a>
+  <a href="contact.html">Contact + Hartă</a>
+</nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="card">
+        
+<h2>Formular pentru cetățeni</h2>
+<p>
+  Prin acest formular pot fi transmise solicitări, sesizări sau întrebări către instituție.
+</p>
+
+<form data-local-confirm>
+  <label for="nume">Nume</label><br>
+  <input id="nume" name="nume" type="text" placeholder="Nume și prenume" required><br><br>
+
+  <label for="email">Email</label><br>
+  <input id="email" name="email" type="email" placeholder="exemplu@email.com" required><br><br>
+
+  <label for="subiect">Subiect</label><br>
+  <input id="subiect" name="subiect" type="text" placeholder="Ex: Iluminat stradal" required><br><br>
+
+  <label for="mesaj">Mesaj</label><br>
+  <textarea id="mesaj" name="mesaj" placeholder="Scrie mesajul aici..." required></textarea><br>
+
+  <button type="submit">Trimite</button>
+  <div class="notice" aria-live="polite"></div>
+</form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Primăria Comunei Crevedia</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
